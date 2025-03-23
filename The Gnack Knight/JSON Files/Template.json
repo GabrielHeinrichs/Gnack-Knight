@@ -1,0 +1,113 @@
+{
+  "enemyTypes": [ // Array of enemies that can be used in the game/waves below.
+    /* Enemy Template
+    {
+      "new enemy name": { // Create a new enemy type
+        "phases": [ // If this enemy is a boss, it can contain multiple phases. Stays ordered.
+          {
+            "endCondition": { // Triggers a change to the next phase.
+              "type": "", // "health" or "time"
+              "condition": "" // Lower bound of health or upperbound of time.
+            },
+            "movement": {
+              "type": "", // Types found in MovementPattern folder
+              "speed": "" // Pixels per second?? --------------------------------------
+            },
+            "speed": "", // Determines how many pixesl per update
+            "bullet": { // Determine type of bullet shot
+              "color": "", // Colors found from Content
+              "size": "", // Radius in pixels???---------------------------------
+              "movement": "", // Types found in MovementPattern folder
+              "cooldown": "", // (double) Seconds between each shot.
+              "speed": "" // Pixels per second?? --------------------------------------
+            }
+          }
+        ]
+      },
+    }
+    */
+
+    // Example Grunt:
+    {
+      "Tree Enemy": {
+        "phases": [
+          {
+            "endCondition": {
+              "type": "time",
+              "condition": "10000"
+            },
+            "movement": {
+              "type": "stationary",
+              "speed": "0"
+            },
+            "bullet": {
+              "color": "",
+              "size": "",
+              "movement": "",
+              "cooldown": "",
+              "speed": ""
+            }
+          }
+        ]
+      }
+    },
+
+    // Example Boss:
+    {
+      "new enemy name": {
+        "phases": [
+          {
+            "endCondition": "(,)",
+            "movement": {
+              "type": "",
+              "speed": ""
+            },
+            "speed": "",
+            "bullet": {
+              "color": "",
+              "size": "",
+              "movement": "",
+              "cooldown": "",
+              "speed": ""
+            }
+          }
+        ]
+      }
+    }
+  ],
+  // array of waves
+    // array of enemies & locations, &
+  "waves": [
+    {
+      "id": "wave 1",
+      "spawns": [
+        {
+          "enemyType": "NickEnemy", // pulls data from above
+          "delay": "50",
+          "enemySpawnCoords": "(100, 50)",
+          "enemyAmount": "5",
+          "interval": "200" // time between enemy spawn
+        },
+        {
+          "enemyType": "ChristianEnemy", // pulls data from above
+          "delay": "50",
+          "enemySpawnCoords": "(50, 100)",
+          "enemyAmount": "10",
+          "interval": "100" // time between enemy spawn
+        }
+      ]
+    },
+
+    {
+      "id": "2",
+      "time": { // Waves able to overlap? Allows flexibility regarding spawning enemies.
+        "start": "900",
+        "end": "3000"
+      },
+      "bossType": "boss1",
+      "enemyType": "grunt2",
+      "......": ""
+    }
+  ]
+}
+

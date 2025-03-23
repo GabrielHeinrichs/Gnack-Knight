@@ -1,0 +1,56 @@
+Project Vision Draft:
+Phase 1: Regular Play with Grunts
+At 00:00 mark, the player will be positioned at the bottom center of the screen
+At 00:13 mark, grunts will start spawning in from the top right side of the screen. Then at 00:16 mark, grunts will start spawning in from the top left side of the screen
+The grunts will move in a straight line to about ⅓ of the screen then move diagonally towards the middle all the way through
+The grunts will spawn and move in this manner once more so a total of four waves of grunts will spawn
+These grunts will shoot every half a second once they start moving diagonally
+At 00:25 mark, a total of 12 grunts will spawn. They will come from the top of the screen and come out one by one, one after the other
+They will shoot once in the direction of the player
+At 00:36 mark, a total of 30 grunts will spawn and come from the top of the screen all at once, almost covering the entire top screen
+Each grunt will shoot 5 consecutive shots in the direction of the player
+At 00:39 mark, grunts will spawn in rows of five from the top of the screen, evenly spaced out and all at once
+Each grunt will fire in a star/spread pattern
+The grunts will spawn and shoot in this manner two more times with 3 seconds in between spawns
+By now, all grunts should be killed or exited the screen
+Phase 2: Mid-Boss Attacks
+At 00:48 mark, the Mid Boss appears at the top of the screen and slowly moves downward
+At 00:52 mark, the Mid Boss stays in place and fires bullets in a asterisk shape
+It will move just a bit and fire again in the same pattern once it stops. It will keep doing this
+As the Mid Boss moves, it will fire smaller bullets
+At 01:15 mark, the Mid Boss should be killed or exited the screen
+
+Phase 3: More Grunts
+For 15 seconds, grunts will spawn from the top of the screen in rows of three, shooting in a star/spread pattern
+The grunts will spawn and shoot in this manner with three seconds between spawns
+
+
+Phase 4: Final Boss Attack
+At 01:30 mark, the Final Boss appears from the top of the screen, slowly makes its way down towards the middle of the screen and begins its first stage of attack
+Stage 1 (01:35 - 02:00): The Final Boss will fire bullets in a lituus shape and as those bullets make their way towards the player, will slowly compress and invert its shape. In between these lituus shape shots, the Final Boss will fire bullets in the shape of a circle twice, one after the other. Repeat.
+Stage 2 (02:00 - 03:00): The Final Boss will now fire bullets in the shape of three Cote’s spirals (Case 3) connected together. In between those shots, the Final boss will fire bullets in the shape of a circle twice, one after the other. Repeat.
+At 03:00 mark, the boss should be killed or exited the screen
+
+Other Information
+Player Movement
+Default control is WASD
+Forward, back, left, right, and diagonally
+Player
+Three lives
+If the player loses a live, it respawns the player at the bottom center of the screen with 2 seconds of being immune to all damage
+They lose when the player loses all lives
+Health
+Player: 100 
+Grunts: 25
+Mid Boss: 1000
+Final Boss: 2000
+Bullet Damage
+Player bullets will deal 1 damage per bullet
+Enemy bullets will deal 25 damage per bullet
+A score will be displayed and the points for each kill are below
+Grunts: +100
+Mid Boss: +1000
+Final Boss:+5000
+A high score will also be displayed
+Win Condition
+The player defeats the boss or reaches the 03:00 mark without losing all their lives
